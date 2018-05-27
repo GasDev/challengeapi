@@ -1,0 +1,36 @@
+{
+  "name": "Challenge",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "challenger": {
+      "type": "number",
+      "required": true
+    },
+    "challenge_type": {
+      "type": "number",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "challenge_date": {
+      "type": "date"
+    },
+    "challenged": {
+      "type": "number"
+    },
+    "status": {
+      "type": "number",
+      "required": true,
+      "default": 0
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
